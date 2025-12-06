@@ -41,13 +41,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/', // Serve docs at the root
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
         },
-        blog: false, // Disable blog
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -57,7 +53,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -65,13 +61,13 @@ const config: Config = {
       title: 'Homo Dominus',
       logo: {
         alt: 'Homo Dominus Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [],
     },
     footer: {
       style: 'dark',
-      copyright: `©`,
+      copyright: `© Ivan Mokshin`,
     },
     prism: {
       theme: prismThemes.github,

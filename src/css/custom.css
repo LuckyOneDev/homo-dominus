@@ -6,25 +6,26 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Blue-Violet palette */
+  --ifm-color-primary: #5c6bc0; /* Indigo 400 */
+  --ifm-color-primary-dark: #3949ab; /* Indigo 600 */
+  --ifm-color-primary-darker: #303f9f; /* Indigo 700 */
+  --ifm-color-primary-darkest: #283593; /* Indigo 800 */
+  --ifm-color-primary-light: #7986cb; /* Indigo 300 */
+  --ifm-color-primary-lighter: #9fa8da; /* Indigo 200 */
+  --ifm-color-primary-lightest: #b388ff; /* Deep Purple A200 */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(92, 107, 192, 0.08); /* faint blue-violet */
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #b388ff; /* Deep Purple A200 */
+  --ifm-color-primary-dark: #7c4dff; /* Deep Purple A400 */
+  --ifm-color-primary-darker: #651fff; /* Deep Purple A700 */
+  --ifm-color-primary-darkest: #512da8; /* Deep Purple 700 */
+  --ifm-color-primary-light: #8c9eff; /* Indigo A100 */
+  --ifm-color-primary-lighter: #aab6fe; /* Indigo A200 */
+  --ifm-color-primary-lightest: #ede7f6; /* Deep Purple 50 */
+  --docusaurus-highlighted-code-line-bg: rgba(179, 136, 255, 0.1); /* faint violet */
 }
