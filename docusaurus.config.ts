@@ -66,7 +66,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/logo.png',
+    image: 'img/logo.webp',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -74,7 +74,7 @@ const config: Config = {
       title: 'Homo Dominus',
       logo: {
         alt: 'Homo Dominus Logo',
-        src: 'img/logo.png',
+        src: 'img/logo.webp',
       },
       items: [],
     },
