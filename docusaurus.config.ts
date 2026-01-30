@@ -1,52 +1,55 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Homo Dominus',
-  tagline: '',
-  favicon: 'img/favicon.ico',
+  title: "Homo Dominus",
+  tagline: "",
+  favicon: "img/favicon.ico",
+
+  // Enable Mermaid diagrams in Markdown/MDX
+  themes: ["@docusaurus/theme-mermaid"],
+  markdown: {
+    mermaid: true,
+  },
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
-    experimental_faster: true
+    experimental_faster: true,
   },
 
   // Set the production url of your site here
-  url: 'https://luckyonedev.github.io/',
+  url: "https://luckyonedev.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/homo-dominus/',
+  baseUrl: "/homo-dominus/",
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'luckyonedev', // Usually your GitHub org/user name.
-  projectName: 'homo-dominus', // Usually your repo name.
-  deploymentBranch: 'build',
-  onBrokenLinks: 'throw',
+  organizationName: "luckyonedev",
+  projectName: "homo-dominus",
+  deploymentBranch: "build",
+  onBrokenLinks: "throw",
   trailingSlash: false,
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+
   i18n: {
-    defaultLocale: 'ru',
-    locales: ['ru'],
+    defaultLocale: "ru",
+    locales: ["ru"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          routeBasePath: '/',
+          sidebarPath: "./sidebars.ts",
+          routeBasePath: "/",
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
@@ -54,7 +57,7 @@ const config: Config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-ideal-image',
+      "@docusaurus/plugin-ideal-image",
       {
         quality: 70,
         max: 1030,
@@ -66,26 +69,26 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/logo.webp',
+    image: "img/logo.webp",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Homo Dominus',
+      title: "Homo Dominus",
       logo: {
-        alt: 'Homo Dominus Logo',
-        src: 'img/logo.webp',
+        alt: "Homo Dominus Logo",
+        src: "img/logo.webp",
       },
       items: [],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       copyright: `© Ivan Mokshin`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ["mermaid"],
     },
   } satisfies Preset.ThemeConfig,
 };
